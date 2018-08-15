@@ -1,0 +1,42 @@
+<div layout="row" layout-align="start center" flex style="background: white; margin-left: 40px; margin-right: 80px; border-radius: 10px; width: 100%; border-style: solid; border-color: #cccccc; border-width: 1px"> 
+  <table style="margin-top: 20px;">
+    <tr>
+      <td>
+        <div class="four wide column center aligned votes" id="votos">
+          <div class="ui statistic">
+            <div class="value">
+              {{ article.votes }}
+            </div>
+            <div class="label">
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <img src="assets/images/tecnologia.jpg" class="ImgRedonda">
+      </td>
+      <td>
+        <div class="twelve wide column" id="ideas">
+          <a class="ui large header" href="{{ link }}">
+            {{ article.title }}
+          </a>
+          <div class="meta">({{ article.domain() }})</div>
+          <ul class="ui big horizontal list voters">
+            <li class="item">
+              <a href (click)="voteUp()">
+                <i class="arrow up icon"></i>
+                  Me gusta
+              </a>
+            </li>
+            <li class="item">
+              <a href (click)="voteDown()">
+                <i class="arrow down icon"></i>
+                  No me gusta
+              </a>
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

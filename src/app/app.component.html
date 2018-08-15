@@ -1,0 +1,35 @@
+	<app-navbar style="position: fixed;width: 100%;    z-index: 999;"></app-navbar>
+
+<body>
+<div class="cointainerMain" >
+  
+
+
+	<div class="ui grid posts" style="background: #dae0e6; margin-top: 69px;width: 66%; float:left;">
+	  <app-article
+	    *ngFor="let foobar of sortedArticles()"
+	    [article]="foobar" style="padding-top: 20px;">
+	  </app-article>
+	</div>
+
+
+
+	<div class='sidebar' flex style="background: white; border-radius: 10px; border-style: solid; border-color: #cccccc; border-width: 1px;text-align: justify;font-size: large;width:35%; float:right;margin-top: 89px;margin-right: 7px;">
+		<strong><br><font color="#bbbbbb" style="margin-left: 15px">Retos activos:</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#BIOTECNOLOGIA</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#BLOCKCHAIN</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#CIBERSEGURIDAD</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#FINANZAS</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#GESTION</font><br><br></strong>
+	</div>
+
+
+
+
+</div>
+</body>
