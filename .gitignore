@@ -1,4 +1,17 @@
+
+
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+
+node_modules
+.idea
+typings
+server/**/*.js
+server/**/*.js.map
+client/**/*.js
+client/**/*.js.map
+/npm-debug.log
+.env
+
 
 angular.json
 package.json
