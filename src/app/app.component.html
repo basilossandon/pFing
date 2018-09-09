@@ -1,20 +1,31 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<app-navbar style="position: fixed;width: 100%;    z-index: 999;"></app-navbar>
 
+<body>
+
+<app-formulario></app-formulario>
+
+<div class="cointainerMain" >
+
+	<div class="ui grid posts" style="background: #dae0e6; margin-top: 69px;width: 66%; float:left;">
+	  <app-article
+	    *ngFor="let foobar of sortedArticles()"
+	    [article]="foobar" style="padding-top: 20px;">
+	  </app-article>
+	</div>
+
+	<div class='sidebar' flex style="background: white; border-radius: 10px; border-style: solid; border-color: #cccccc; border-width: 1px;text-align: justify;font-size: large;width:35%; float:right;margin-top: 89px;margin-right: 7px;">
+		<strong><br><font color="#bbbbbb" style="margin-left: 15px">Retos activos:</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#BIOTECNOLOGIA</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#BLOCKCHAIN</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#CIBERSEGURIDAD</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#FINANZAS</font><br>
+		<hr color=#cccccc>
+		<br> <font color="#7f7f7f" style="margin-left: 15px">#GESTION</font><br><br></strong>
+	</div>
+
+</div>
+</body>

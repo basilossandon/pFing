@@ -1,0 +1,30 @@
+#contenedor {
+	background: #BFBFBF; 
+}
+#columna1 { 
+	background: white;
+	margin-left: 24px;
+	margin-right: 24px;
+	width: 924px;
+
+}
+#columna2 {
+	background: white;
+	margin-right: 24px;
+	width: 350px;
+	border: 1px solid grey;
+}
+
+#columna1, #columna2 { display: inline-block; color: black; margin-top: 20px;}
+
+tr {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 0px;
+}
+
+td {
+	padding: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}

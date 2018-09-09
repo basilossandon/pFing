@@ -1,5 +1,25 @@
+<<<<<<< HEAD
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+=======
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+node_modules
+.idea
+typings
+server/**/*.js
+server/**/*.js.map
+client/**/*.js
+client/**/*.js.map
+/npm-debug.log
+.env
+
+
+angular.json
+package.json
+>>>>>>> 1e1cc68c757fb6f63194bb32c7705d47dcbf1b61
 # compiled output
 /dist
 /tmp
