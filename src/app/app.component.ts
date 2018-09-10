@@ -10,7 +10,8 @@ export class AppComponent {
   title = 'Alaya Platform';
   articles: Article[];  
   constructor(){
-    
+     this.articles = [
+      new Article('Sistema distribuido que detecta posibles accidentes de tránsito mediante la geolocalización, conectado a través de un servicio.', 'http://Posteado por Juan Pablo Martinez hace 5 horas atrás. Comentarios Reportar', 3),];
   }
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
     console.log(`Adding article title: ${title.value} and link: ${link.value}`);
