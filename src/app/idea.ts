@@ -1,11 +1,11 @@
 export class Idea {
-  title: String;
-  link: String;
+  title: string;
+  text: string;
   votes: number;
 
-  constructor(title: string, link: string, votes?: number) {
+  constructor(title: string, text: string, votes: number) {
     this.title = title;
-    this.link = link;
+    this.text = text;
     this.votes = votes;
   }
 
@@ -19,8 +19,8 @@ export class Idea {
 
   domain(): string {
     try {
-      const link: string = this.link.split('//')[1];
-      return link.split('/')[0];
+      const text: string = this.text.split('//')[1];
+      return text.split('/')[0];
     } catch (err) {
       return null;
     }

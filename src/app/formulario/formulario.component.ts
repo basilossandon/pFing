@@ -12,18 +12,24 @@ import { Observable } from 'rxjs';
 })
 export class FormularioComponent implements OnInit {
 
-  idea = new Idea("test","psw", 0);
+
+
+  idea = new Idea(null,null, 0);
 
   constructor(private http: HttpClient) { 
   }
   ngOnInit() {
   }
-  submit(){
+  submit(title: HTMLInputElement, text: HTMLInputElement): Idea {
     console.log(this.idea.title);
+    this.idea.title = title.value;
+    this.idea.text = text.value;
+
     this.http.post("http://localhost:1313/ideas",this.idea)
     .subscribe(response => {
       console.log(response);
     });
+    return this.idea;
    }
    nameChange(e){
     console.log("change");

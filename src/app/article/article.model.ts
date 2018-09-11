@@ -1,12 +1,12 @@
 export class Article {
   title: string;
-  link: string;
+  text: string;
   votes: number;
 
-  constructor(title: string, link: string, votes?: number) {
+  constructor(title: string, text: string, votes: number) {
     this.title = title;
-    this.link = link;
-    this.votes = votes || 0;
+    this.text = text;
+    this.votes = votes;
   }
 
   voteUp(): void {
@@ -19,8 +19,8 @@ export class Article {
 
   domain(): string {
     try {
-      const link: string = this.link.split('//')[1];
-      return link.split('/')[0];
+      const text: string = this.text.split('//')[1];
+      return text.split('/')[0];
     } catch (err) {
       return null;
     }
