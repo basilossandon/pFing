@@ -20,7 +20,7 @@ export class AppComponent {
 
      this.get();
      this.articles = [
-      new Article('Sistema distribuido que detecta posibles accidentes de tránsito mediante la geolocalización, conectado a través de un servicio.', 'Posteado por Juan Pablo Martinez hace 5 horas atrás. Comentarios Reportar', 3),];
+      new Article('Aseguramiento de transferencias de valor mediante grafos aciclicos dirigidos tokenizados para IoT.', 'Posteado por Juan Pablo Martinez hace 5 horas atrás. Comentarios Reportar', 3),];
   }
 
   get(){
